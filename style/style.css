@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #F57E0E;
+    --secondary-color: #333;
+    --link-color: #0000ff;
+    --white: #fff;
+    --special-font: 'Black Ops One';
+    --shadow-white: #fff 0 0 .5rem;
+    --shadow-black: #000 0 0 .5rem;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.layout {
+    margin: auto;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 80px;
+    height: 60px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+
+.cont-nav{
+    display: flex;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.active{
+    color: var(--primary-color);
+    background-color: var(--white);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: 15px;
+    justify-content: right;
+    padding-right: 10px;
+}
+
+.banner img{
+    width: 100%;
+}
+.banner h1{
+    font-size: 22px;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px 0px;
+    text-shadow: 2px 2px 5px white, -2px -2px 5px white;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+}
+
+
+main{
+    background-color: var(--primary-color);
+    padding: 0px 10px;
+}
+
+.subtitle{
+    text-align: center;
+    padding: 15px 0px;
+    text-shadow: 2px 2px 5px white, -2px -2px 5px white;
+}
+
+.article-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.article-servicios h3{
+    color: var(--white);
+    text-shadow: 2px 2px 5px black, -2px -2px 5px black;
+}
+
+.art1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.art1 ol{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 600;
+}
+.art2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.art2 ul{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.art3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+}
+
+.art3 ul{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+table tr,th,td{
+    border: 1px solid black;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    font-size: 14px;
+}
+.article-horarios{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-size: 12px;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.button-footer{
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+footer input{
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media screen and (min-width:768px) {
+    .article-servicios{
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    .art2{
+        flex-grow: 1;
+    }
+    .art1, .art3{
+        flex-grow: 2;
+    }
+    footer{
+        height: 100px;
+        font-size: 15px;
+    }
+    .thead th{
+        padding: 10px;
+    }
+    .tbody td{
+        padding: 10px;
+    }
+    table{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .layout{
+        font-size: 17px;
+    }
+    .article-servicios h3{
+       font-size: 22px; 
+    }
+    .banner h1{
+        font-size: 30px;
+    }
+    table{
+        font-size: 18px;
+    }
+    footer{
+        height: 100px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .layout{
+        font-size: 20px;
+    }
+    table{
+        font-size: 20px;
+    }
+    .article-servicios h3{
+        font-size: 25px; 
+    }
+     .banner h1{
+        font-size: 30px;
+    }
+    footer{
+        font-size: 20px;
+    }
+
+}
